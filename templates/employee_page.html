@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/dashboard_styles.css') }}">
+</head>
+<body>
+    <div class="employee-page-container">
+        <h1>Employee Page</h1>
+
+        <table class="employee-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee Number</th>
+                    <th>Address</th>
+                    <th>Position</th>
+                    <th>Supervisor</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for employee in employees %}
+                    <tr>
+                        <td><a href="{{ url_for('employee_profile', employee_id=employee['_id']) }}">{{ employee.name }}</a></td>
+                        <td>{{ employee.employee_number }}</td>
+                        <td>{{ employee.address }}</td>
+                        <td>{{ employee.position }}</td>
+                        <td>{{ employee.supervisor }}</td>
+                        <td>{{ employee.salary }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

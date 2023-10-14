@@ -1,0 +1,9 @@
+{
+"db_name" : "thr_system",
+"db_address" : "localhost",
+"db_port" : "27017",
+"collections" :{
+    "employee" : "employees",
+    "internal_user" : "users"
+}
+}

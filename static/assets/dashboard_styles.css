@@ -1,0 +1,55 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.dashboard-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-count {
+    margin-bottom: 20px;
+}
+
+.employee-count .count {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.employee-count .label {
+    font-size: 18px;
+}
+
+a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.employee-table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 2px solid black; /* Border for the entire table */
+}
+
+.employee-table th, .employee-table td {
+    border: 1px solid black; /* Border for each cell (header and data) */
+    padding: 8px; /* Add some padding for better readability */
+}
+
+.employee-table th {
+    background-color: #f2f2f2; /* Background color for header cells */
+}

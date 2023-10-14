@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/styles.css') }}"> <!-- Add the correct path to your styles.css -->
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Employee Profile</h1>
+
+        <!-- Display employee information -->
+        <div class="employee-profile">
+            <h2>{{ employee.name }}</h2>
+            <p><strong>Employee Number:</strong> {{ employee.employee_number }}</p>
+            <p><strong>Address:</strong> {{ employee.address }}</p>
+            <p><strong>Position:</strong> {{ employee.position }}</p>
+            <p><strong>Supervisor:</strong> {{ employee.supervisor }}</p>
+            <p><strong>Salary:</strong> {{ employee.salary }}</p>
+        </div>
+    </div>
+</body>
+</html>
